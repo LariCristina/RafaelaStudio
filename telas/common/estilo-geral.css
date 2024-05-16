@@ -1,23 +1,32 @@
 
+
+/* ------------ LAYOUT ---------------- */
 .page-header {
   background: #E4CCCC;
-  display: block;
 }
 
-.page-header h1 {
-  display: inline-block;
-  font-size: 24pt;
-  font-family: sans-serif;
-  margin: 20px 30px;
+.row .align-right {
+  float: right
 }
 
 .page-content {
   display: block;
 }
 
-input.btn-localizar {
-  margin: 20px 0px;
+/* ------------ CONTENT ELEMENTS ---------------- */
+
+.page-header h1 {
+  display: inline-block;
+  font-size: 24pt;
+  font-family: sans-serif;
+  margin: 20px 30px;
+  font-weight: bold;
 }
+
+.table-footer {
+  margin-top: 20px;
+}
+
 
 .container table {
   border-collapse: collapse;
@@ -44,33 +53,49 @@ input.btn-localizar {
   float: right;
 }
 .container table .table-row-et:nth-child(even) {
-  background-color: #b4cffd;
+  background-color: #CEF4F9;
 }
 
 .container table .table-row-et:nth-child(odd) {
-  background-color: #b8fcd9;
+  background-color: #CEF9D5;
 }
 .container table .table-row-et .table-icons {
   display: block;
   float: right;
 }
 
-.container table .table-row .table-icons i {
-  
+.divisor-block {
+  max-width: 650px;
+  border: 2px solid #d7d7d7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.table-footer {
-  margin-top: 20px;
+.read-only label {
+  margin-top: 8px;
 }
 
-.product {
-  text-align: right;
+.read-only label:last-child {
+  border: 2px solid #ededed;
+  padding: 3px;
+  width: 70px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* ------------ FORM ELEMENTS ---------------- */
+
+input.btn-localizar {
+  margin: 20px 0px;
 }
 
 button {
   background-color: #4CAF50;
   color: white;
-  border: none;
+  border-radius: 8px ;
+  border: 1px solid #cccc;
+  filter:drop-shadow(4px 4px 4px #acacac);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -92,91 +117,70 @@ button:hover {
   background-color: #da190b;
 }
 
-input[type="date"] {
-  padding: 5px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 200px;
-  display: 340px;
-  align-items:left;
-}
-input[type="text"], input[type="number"], input[type="date"] {
-  background: #ffff;
-  border: 1px #c0c0c0 solid;
-  border-radius: 5px;
-  filter: drop-shadow(2px 2px 2px #c0c0c0);
+.page-footer button {
+  float: right
 }
 
-.input-group {
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  margin-bottom: 24px;
-  margin-top: 40px;
+input, select {
+  padding: 5px;
+  border-radius: 4px;
+  background: #ffff;
+  border: 1px solid #cccc;
+  filter:drop-shadow(2px 2px 2px #acacac);
+  font-size: 16px;
 }
-.input-group label {
+
+input.wide {
+  width: 87% !important;
+}
+
+input.small {
+  width: 200px !important;
+}
+
+input[type="number"] {
   width: 150px;
-  text-align: left;
-  margin-right:10px;
 }
-.input-group input, .input-group select {
-  width: 100px;
-  margin-left: 100px;
-}
-.input-group .quantity {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+
+input[type="date"] {
   width: 200px;
-  margin-left: 10px;
 }
-.input-group .quantity input[type="number"] {
-  width: 100px;
-  margin-right: 10px;
+
+input[type="text"] {
+  width: 450px;
 }
-.input-group .quantity button {
-  width: 30px;
-  height: 30px;
-  background-color: #ddd;
-  border: none;
-  cursor: pointer;
-}
-.input-group .validade {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 200px;
-  margin-left: 10px;
-}
-.input-group .validade input {
-  width: 100px;
-  margin: 0 10px;
-}
+
 .input-field {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
+
 .input-field label {
   width: 150px;
-  text-align:left;
-  margin-right: 10px;
+  text-align: left;
 }
-
 .input-field input[type="number"],
 .input-field span {
   width: 100px
 }
 
-.input-field input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
 .input-field input[type="radio"] {
   margin-right: 10px;
 }
+
+.input-group {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-group label {
+  width: 150px;
+  text-align: left;
+  margin-right: 10px;
+  align-items: stretch;
+}
+
 .autofill {
   font-weight: bold;
   color: #666;

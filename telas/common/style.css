@@ -1,0 +1,19 @@
+.page-header {
+    background: #E4CCCC;
+}
+
+.page-header h1 {
+    display: inline-block;
+    font-size: 24pt;
+    font-family: sans-serif;
+    margin: 20px 30px;
+    font-weight: bold;
+}
+
+.input-group {
+    
+}
+
+.input-group label {
+    margin-right: 50px;
+}
